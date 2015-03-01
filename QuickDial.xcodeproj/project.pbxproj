@@ -24,6 +24,7 @@
 		19DE4BAC1AA3598D00B81690 /* QuickDialKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19DE4B941AA3598D00B81690 /* QuickDialKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		19DE4BB51AA359A300B81690 /* DialPhoneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE4BB41AA359A300B81690 /* DialPhoneManager.swift */; };
 		19DE4BB61AA35A2200B81690 /* QuickDialKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DE4B941AA3598D00B81690 /* QuickDialKit.framework */; };
+		19DE4BB71AA3627500B81690 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19DE4B601AA34D4F00B81690 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -461,6 +462,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19DE4B871AA34D6A00B81690 /* MainInterface.storyboard in Resources */,
+				19DE4BB71AA3627500B81690 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
