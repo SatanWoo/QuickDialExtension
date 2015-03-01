@@ -10,7 +10,9 @@ import UIKit
 import NotificationCenter
 
 class TodayViewController: UIViewController, NCWidgetProviding {
-        
+    
+    @IBOutlet weak var phoneNumberLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view from its nib.
@@ -24,15 +26,36 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     func widgetMarginInsetsForProposedMarginInsets(defaultMarginInsets: UIEdgeInsets) -> UIEdgeInsets {
         return UIEdgeInsetsZero;
     }
-   
+    
     func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)!) {
         // Perform any setup necessary in order to update the view.
-
+        
         // If an error is encountered, use NCUpdateResult.Failed
         // If there's no update required, use NCUpdateResult.NoData
         // If there's an update, use NCUpdateResult.NewData
-
-        completionHandler(NCUpdateResult.NewData)
+        
+        completionHandler(NCUpdateResult.NoData)
     }
     
+    @IBAction func didPressDigitalButton(sender: UIButton) {
+        let digit = sender.tag;
+        if let text = self.phoneNumberLabel.text {
+            self.phoneNumberLabel.text = self.phoneNumberLabel.text! + "\(digit)";
+        } else {
+            self.phoneNumberLabel.text = "\(digit)";
+        }
+    }
+    
+    @IBAction func didPressDeleteButton(sender: UIButton) {
+        if let text = self.phoneNumberLabel.text {
+            self.phoneNumberLabel.text = self.phoneNumberLabel.text!.substringToIndex(text.endIndex.predecessor());
+        }
+    }
+    
+    
+    @IBAction func didPressDialButton(sender: UIButton) {
+        if let text = self.phoneNumberLabel.text {
+            //PhoneCallHelper.dialPhone(text);
+        }
+    }
 }
