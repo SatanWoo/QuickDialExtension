@@ -20,8 +20,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.phoneNumberLabel.text! = "110";
-        
+        self.phoneNumberLabel.text! = "";
         self.configureDigitButton();
         // Do any additional setup after loading the view from its nib.
     }
