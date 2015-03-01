@@ -125,6 +125,9 @@
                                         <state key="normal" title="0">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="didPressDigitalButton:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="4WE-i5-fc2"/>
+                                        </connections>
                                     </button>
                                     <button clipsSubviews="YES" tag="200" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTI-gs-tB9">
                                         <rect key="frame" x="146" y="156" width="34" height="34"/>
