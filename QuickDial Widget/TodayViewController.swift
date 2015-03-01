@@ -9,12 +9,21 @@
 import UIKit
 import NotificationCenter
 
+
+
 class TodayViewController: UIViewController, NCWidgetProviding {
     
     @IBOutlet weak var phoneNumberLabel: UILabel!
+    @IBOutlet weak var keyPadView: UIView!
     
+    let WZKeyPadDigitNumber = 9;
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.phoneNumberLabel.text! = "110";
+        
+        self.configureDigitButton();
         // Do any additional setup after loading the view from its nib.
     }
     
@@ -23,17 +32,20 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         // Dispose of any resources that can be recreated.
     }
     
+    private func configureDigitButton() {
+        for view in self.keyPadView.subviews {
+            if view.tag <= self.WZKeyPadDigitNumber {
+                view.layer.cornerRadius = 18.5;
+                view.layer.masksToBounds = true;
+            }
+        }
+    }
+    
     func widgetMarginInsetsForProposedMarginInsets(defaultMarginInsets: UIEdgeInsets) -> UIEdgeInsets {
         return UIEdgeInsetsZero;
     }
     
     func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)!) {
-        // Perform any setup necessary in order to update the view.
-        
-        // If an error is encountered, use NCUpdateResult.Failed
-        // If there's no update required, use NCUpdateResult.NoData
-        // If there's an update, use NCUpdateResult.NewData
-        
         completionHandler(NCUpdateResult.NoData)
     }
     
