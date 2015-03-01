@@ -108,9 +108,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="100" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekX-gV-NQZ">
-                                        <rect key="frame" x="8" y="154" width="38" height="38"/>
+                                        <rect key="frame" x="10" y="156" width="34" height="34"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                        <state key="normal">
+                                        <state key="normal" image="delete">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -126,7 +126,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" tag="200" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTI-gs-tB9">
-                                        <rect key="frame" x="144" y="154" width="39" height="38"/>
+                                        <rect key="frame" x="146" y="156" width="34" height="34"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <state key="normal" image="Shape">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -188,6 +188,7 @@
     </scenes>
     <resources>
         <image name="Shape" width="39" height="38"/>
+        <image name="delete" width="38" height="38"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
