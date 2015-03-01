@@ -35,6 +35,20 @@
                ReferencedContainer = "container:QuickDial.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "19DE4B9D1AA3598D00B81690"
+               BuildableName = "QuickDialKitTests.xctest"
+               BlueprintName = "QuickDialKitTests"
+               ReferencedContainer = "container:QuickDial.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -43,13 +57,23 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "19DE4B9D1AA3598D00B81690"
+               BuildableName = "QuickDialKitTests.xctest"
+               BlueprintName = "QuickDialKitTests"
+               ReferencedContainer = "container:QuickDial.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "19DE4B7C1AA34D6A00B81690"
-            BuildableName = "QuickDial Widget.appex"
-            BlueprintName = "QuickDial Widget"
+            BlueprintIdentifier = "19DE4B531AA34D4F00B81690"
+            BuildableName = "QuickDial.app"
+            BlueprintName = "QuickDial"
             ReferencedContainer = "container:QuickDial.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,7 +88,11 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
+      <IDERemoteRunnable
+         RemotePath = "/Today-View"
+         BundleIdentifier = "/Today-View">
+      </IDERemoteRunnable>
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "19DE4B531AA34D4F00B81690"
@@ -72,7 +100,7 @@
             BlueprintName = "QuickDial"
             ReferencedContainer = "container:QuickDial.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

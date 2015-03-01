@@ -8,8 +8,7 @@
 
 import UIKit
 import NotificationCenter
-
-
+import QuickDialKit
 
 class TodayViewController: UIViewController, NCWidgetProviding {
     
@@ -64,10 +63,9 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         }
     }
     
-    
     @IBAction func didPressDialButton(sender: UIButton) {
         if let text = self.phoneNumberLabel.text {
-            //PhoneCallHelper.dialPhone(text);
+            DialPhoneManager.dial(text);
         }
     }
 }

@@ -34,6 +34,20 @@
                ReferencedContainer = "container:QuickDial.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "19DE4B9D1AA3598D00B81690"
+               BuildableName = "QuickDialKitTests.xctest"
+               BlueprintName = "QuickDialKitTests"
+               ReferencedContainer = "container:QuickDial.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -49,6 +63,16 @@
                BlueprintIdentifier = "19DE4B681AA34D4F00B81690"
                BuildableName = "QuickDialTests.xctest"
                BlueprintName = "QuickDialTests"
+               ReferencedContainer = "container:QuickDial.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "19DE4B9D1AA3598D00B81690"
+               BuildableName = "QuickDialKitTests.xctest"
+               BlueprintName = "QuickDialKitTests"
                ReferencedContainer = "container:QuickDial.xcodeproj">
             </BuildableReference>
          </TestableReference>

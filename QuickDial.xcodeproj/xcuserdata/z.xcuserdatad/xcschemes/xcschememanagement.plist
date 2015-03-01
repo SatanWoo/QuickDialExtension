@@ -14,6 +14,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>QuickDialKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -28,6 +33,16 @@
 			<true/>
 		</dict>
 		<key>19DE4B7C1AA34D6A00B81690</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>19DE4B931AA3598D00B81690</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>19DE4B9D1AA3598D00B81690</key>
 		<dict>
 			<key>primary</key>
 			<true/>

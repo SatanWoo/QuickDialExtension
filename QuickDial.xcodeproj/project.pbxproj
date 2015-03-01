@@ -17,6 +17,13 @@
 		19DE4B851AA34D6A00B81690 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE4B841AA34D6A00B81690 /* TodayViewController.swift */; };
 		19DE4B871AA34D6A00B81690 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19DE4B861AA34D6A00B81690 /* MainInterface.storyboard */; };
 		19DE4B8A1AA34D6A00B81690 /* QuickDial Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 19DE4B7D1AA34D6A00B81690 /* QuickDial Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		19DE4B991AA3598D00B81690 /* QuickDialKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 19DE4B981AA3598D00B81690 /* QuickDialKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19DE4B9F1AA3598D00B81690 /* QuickDialKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DE4B941AA3598D00B81690 /* QuickDialKit.framework */; };
+		19DE4BA81AA3598D00B81690 /* QuickDialKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE4BA71AA3598D00B81690 /* QuickDialKitTests.swift */; };
+		19DE4BAB1AA3598D00B81690 /* QuickDialKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DE4B941AA3598D00B81690 /* QuickDialKit.framework */; };
+		19DE4BAC1AA3598D00B81690 /* QuickDialKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19DE4B941AA3598D00B81690 /* QuickDialKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		19DE4BB51AA359A300B81690 /* DialPhoneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DE4BB41AA359A300B81690 /* DialPhoneManager.swift */; };
+		19DE4BB61AA35A2200B81690 /* QuickDialKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DE4B941AA3598D00B81690 /* QuickDialKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,27 @@
 			remoteGlobalIDString = 19DE4B7C1AA34D6A00B81690;
 			remoteInfo = "QuickDial Widget";
 		};
+		19DE4BA01AA3598D00B81690 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19DE4B4C1AA34D4F00B81690 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19DE4B931AA3598D00B81690;
+			remoteInfo = QuickDialKit;
+		};
+		19DE4BA21AA3598D00B81690 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19DE4B4C1AA34D4F00B81690 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19DE4B531AA34D4F00B81690;
+			remoteInfo = QuickDial;
+		};
+		19DE4BA91AA3598D00B81690 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19DE4B4C1AA34D4F00B81690 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19DE4B931AA3598D00B81690;
+			remoteInfo = QuickDialKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +74,17 @@
 				19DE4B8A1AA34D6A00B81690 /* QuickDial Widget.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19DE4BB01AA3598E00B81690 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				19DE4BAC1AA3598D00B81690 /* QuickDialKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -66,6 +105,13 @@
 		19DE4B831AA34D6A00B81690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19DE4B841AA34D6A00B81690 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		19DE4B861AA34D6A00B81690 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		19DE4B941AA3598D00B81690 /* QuickDialKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QuickDialKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19DE4B971AA3598D00B81690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19DE4B981AA3598D00B81690 /* QuickDialKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickDialKit.h; sourceTree = "<group>"; };
+		19DE4B9E1AA3598D00B81690 /* QuickDialKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickDialKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		19DE4BA61AA3598D00B81690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19DE4BA71AA3598D00B81690 /* QuickDialKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickDialKitTests.swift; sourceTree = "<group>"; };
+		19DE4BB41AA359A300B81690 /* DialPhoneManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialPhoneManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19DE4BAB1AA3598D00B81690 /* QuickDialKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +134,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19DE4BB61AA35A2200B81690 /* QuickDialKit.framework in Frameworks */,
 				19DE4B801AA34D6A00B81690 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19DE4B901AA3598D00B81690 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19DE4B9B1AA3598D00B81690 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19DE4B9F1AA3598D00B81690 /* QuickDialKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +163,8 @@
 				19DE4B561AA34D4F00B81690 /* QuickDial */,
 				19DE4B6C1AA34D4F00B81690 /* QuickDialTests */,
 				19DE4B811AA34D6A00B81690 /* QuickDial Widget */,
+				19DE4B951AA3598D00B81690 /* QuickDialKit */,
+				19DE4BA41AA3598D00B81690 /* QuickDialKitTests */,
 				19DE4B7E1AA34D6A00B81690 /* Frameworks */,
 				19DE4B551AA34D4F00B81690 /* Products */,
 			);
@@ -111,6 +176,8 @@
 				19DE4B541AA34D4F00B81690 /* QuickDial.app */,
 				19DE4B691AA34D4F00B81690 /* QuickDialTests.xctest */,
 				19DE4B7D1AA34D6A00B81690 /* QuickDial Widget.appex */,
+				19DE4B941AA3598D00B81690 /* QuickDialKit.framework */,
+				19DE4B9E1AA3598D00B81690 /* QuickDialKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -179,7 +246,53 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		19DE4B951AA3598D00B81690 /* QuickDialKit */ = {
+			isa = PBXGroup;
+			children = (
+				19DE4B981AA3598D00B81690 /* QuickDialKit.h */,
+				19DE4BB41AA359A300B81690 /* DialPhoneManager.swift */,
+				19DE4B961AA3598D00B81690 /* Supporting Files */,
+			);
+			path = QuickDialKit;
+			sourceTree = "<group>";
+		};
+		19DE4B961AA3598D00B81690 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				19DE4B971AA3598D00B81690 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		19DE4BA41AA3598D00B81690 /* QuickDialKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				19DE4BA71AA3598D00B81690 /* QuickDialKitTests.swift */,
+				19DE4BA51AA3598D00B81690 /* Supporting Files */,
+			);
+			path = QuickDialKitTests;
+			sourceTree = "<group>";
+		};
+		19DE4BA51AA3598D00B81690 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				19DE4BA61AA3598D00B81690 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		19DE4B911AA3598D00B81690 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19DE4B991AA3598D00B81690 /* QuickDialKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		19DE4B531AA34D4F00B81690 /* QuickDial */ = {
@@ -190,11 +303,13 @@
 				19DE4B511AA34D4F00B81690 /* Frameworks */,
 				19DE4B521AA34D4F00B81690 /* Resources */,
 				19DE4B8E1AA34D6A00B81690 /* Embed App Extensions */,
+				19DE4BB01AA3598E00B81690 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				19DE4B891AA34D6A00B81690 /* PBXTargetDependency */,
+				19DE4BAA1AA3598D00B81690 /* PBXTargetDependency */,
 			);
 			name = QuickDial;
 			productName = QuickDial;
@@ -236,6 +351,43 @@
 			productReference = 19DE4B7D1AA34D6A00B81690 /* QuickDial Widget.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		19DE4B931AA3598D00B81690 /* QuickDialKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19DE4BAD1AA3598E00B81690 /* Build configuration list for PBXNativeTarget "QuickDialKit" */;
+			buildPhases = (
+				19DE4B8F1AA3598D00B81690 /* Sources */,
+				19DE4B901AA3598D00B81690 /* Frameworks */,
+				19DE4B911AA3598D00B81690 /* Headers */,
+				19DE4B921AA3598D00B81690 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickDialKit;
+			productName = QuickDialKit;
+			productReference = 19DE4B941AA3598D00B81690 /* QuickDialKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		19DE4B9D1AA3598D00B81690 /* QuickDialKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19DE4BB11AA3598E00B81690 /* Build configuration list for PBXNativeTarget "QuickDialKitTests" */;
+			buildPhases = (
+				19DE4B9A1AA3598D00B81690 /* Sources */,
+				19DE4B9B1AA3598D00B81690 /* Frameworks */,
+				19DE4B9C1AA3598D00B81690 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19DE4BA11AA3598D00B81690 /* PBXTargetDependency */,
+				19DE4BA31AA3598D00B81690 /* PBXTargetDependency */,
+			);
+			name = QuickDialKitTests;
+			productName = QuickDialKitTests;
+			productReference = 19DE4B9E1AA3598D00B81690 /* QuickDialKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -255,6 +407,13 @@
 					19DE4B7C1AA34D6A00B81690 = {
 						CreatedOnToolsVersion = 6.1;
 					};
+					19DE4B931AA3598D00B81690 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					19DE4B9D1AA3598D00B81690 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 19DE4B531AA34D4F00B81690;
+					};
 				};
 			};
 			buildConfigurationList = 19DE4B4F1AA34D4F00B81690 /* Build configuration list for PBXProject "QuickDial" */;
@@ -273,6 +432,8 @@
 				19DE4B531AA34D4F00B81690 /* QuickDial */,
 				19DE4B681AA34D4F00B81690 /* QuickDialTests */,
 				19DE4B7C1AA34D6A00B81690 /* QuickDial Widget */,
+				19DE4B931AA3598D00B81690 /* QuickDialKit */,
+				19DE4B9D1AA3598D00B81690 /* QuickDialKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -300,6 +461,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				19DE4B871AA34D6A00B81690 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19DE4B921AA3598D00B81690 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19DE4B9C1AA3598D00B81690 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +506,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		19DE4B8F1AA3598D00B81690 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19DE4BB51AA359A300B81690 /* DialPhoneManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19DE4B9A1AA3598D00B81690 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19DE4BA81AA3598D00B81690 /* QuickDialKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -343,6 +534,21 @@
 			isa = PBXTargetDependency;
 			target = 19DE4B7C1AA34D6A00B81690 /* QuickDial Widget */;
 			targetProxy = 19DE4B881AA34D6A00B81690 /* PBXContainerItemProxy */;
+		};
+		19DE4BA11AA3598D00B81690 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19DE4B931AA3598D00B81690 /* QuickDialKit */;
+			targetProxy = 19DE4BA01AA3598D00B81690 /* PBXContainerItemProxy */;
+		};
+		19DE4BA31AA3598D00B81690 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19DE4B531AA34D4F00B81690 /* QuickDial */;
+			targetProxy = 19DE4BA21AA3598D00B81690 /* PBXContainerItemProxy */;
+		};
+		19DE4BAA1AA3598D00B81690 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19DE4B931AA3598D00B81690 /* QuickDialKit */;
+			targetProxy = 19DE4BA91AA3598D00B81690 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -523,6 +729,83 @@
 			};
 			name = Release;
 		};
+		19DE4BAE1AA3598E00B81690 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = QuickDialKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		19DE4BAF1AA3598E00B81690 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = QuickDialKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		19DE4BB21AA3598E00B81690 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = QuickDialKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickDial.app/QuickDial";
+			};
+			name = Debug;
+		};
+		19DE4BB31AA3598E00B81690 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = QuickDialKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickDial.app/QuickDial";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -556,6 +839,22 @@
 			buildConfigurations = (
 				19DE4B8C1AA34D6A00B81690 /* Debug */,
 				19DE4B8D1AA34D6A00B81690 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		19DE4BAD1AA3598E00B81690 /* Build configuration list for PBXNativeTarget "QuickDialKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19DE4BAE1AA3598E00B81690 /* Debug */,
+				19DE4BAF1AA3598E00B81690 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		19DE4BB11AA3598E00B81690 /* Build configuration list for PBXNativeTarget "QuickDialKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19DE4BB21AA3598E00B81690 /* Debug */,
+				19DE4BB31AA3598E00B81690 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
