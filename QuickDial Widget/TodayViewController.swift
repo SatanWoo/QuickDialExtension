@@ -58,7 +58,9 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     @IBAction func didPressDeleteButton(sender: UIButton) {
         if let text = self.phoneNumberLabel.text {
-            self.phoneNumberLabel.text = self.phoneNumberLabel.text!.substringToIndex(text.endIndex.predecessor());
+            if countElements(text) > 0 {
+                self.phoneNumberLabel.text = self.phoneNumberLabel.text!.substringToIndex(text.endIndex.predecessor());
+            }
         }
     }
     
